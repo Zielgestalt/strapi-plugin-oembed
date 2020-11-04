@@ -1,0 +1,40 @@
+{
+  "info": {
+    "name": "oEmbed",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "url": {
+      "type": "string",
+      "configurable": false,
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "configurable": false
+    },
+    "mime": {
+      "type": "string",
+      "configurable": false,
+      "required": true
+    },
+    "thumbnail": {
+      "type": "string",
+      "configurable": false
+    },
+    "raw_data": {
+      "type": "json",
+      "configurable": false
+    },
+    "related": {
+      "collection": "*",
+      "filter": "field",
+      "configurable": false
+    }
+  }
+}
